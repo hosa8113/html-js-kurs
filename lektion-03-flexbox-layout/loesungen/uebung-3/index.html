@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard — Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">📊 MeinDashboard</div>
+        <div class="user">Hallo, Anna 👋</div>
+    </header>
+
+    <div class="body-wrap">
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="active">🏠 Übersicht</a>
+                <a href="#">📈 Statistik</a>
+                <a href="#">💰 Finanzen</a>
+                <a href="#">👥 Team</a>
+                <a href="#">⚙️ Einstellungen</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>Übersicht</h1>
+
+            <section class="stats">
+                <div class="stat-karte">
+                    <p class="stat-label">Nutzer heute</p>
+                    <p class="stat-wert">1'247</p>
+                </div>
+                <div class="stat-karte">
+                    <p class="stat-label">Umsatz Woche</p>
+                    <p class="stat-wert">CHF 12'380</p>
+                </div>
+                <div class="stat-karte">
+                    <p class="stat-label">Aktive Projekte</p>
+                    <p class="stat-wert">23</p>
+                </div>
+            </section>
+
+            <section class="hauptinhalt">
+                <h2>Letzte Aktivität</h2>
+                <ul>
+                    <li>Anna hat einen neuen Bericht erstellt</li>
+                    <li>Max hat Projekt "Alpha" abgeschlossen</li>
+                    <li>Neue Nachricht von Lino im Team-Chat</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 MeinDashboard — mit Flexbox gebaut</p>
+    </footer>
+</body>
+</html>

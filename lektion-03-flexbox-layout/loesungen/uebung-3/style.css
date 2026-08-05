@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   Sticky Footer Trick
+   ========================================== */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-wrap {
+    flex: 1;             /* Nimmt allen Platz zwischen Header und Footer */
+    display: flex;       /* Sidebar & Content nebeneinander */
+}
+
+/* ==========================================
+   Header
+   ========================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ==========================================
+   Sidebar — feste Breite
+   ========================================== */
+.sidebar {
+    flex: 0 0 240px;
+    background-color: #16213e;
+    color: white;
+    padding: 24px 16px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar nav a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.15s;
+}
+
+.sidebar nav a:hover {
+    background-color: #0f172a;
+    color: white;
+}
+
+.sidebar nav a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* ==========================================
+   Content — nimmt den Rest
+   ========================================== */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+/* Stats-Karten Reihe */
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.stat-karte {
+    flex: 1 1 200px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
+.stat-wert {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.hauptinhalt {
+    background-color: white;
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.hauptinhalt h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.hauptinhalt ul {
+    padding-left: 20px;
+}
+
+.hauptinhalt li {
+    margin-bottom: 8px;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.7;
+}
