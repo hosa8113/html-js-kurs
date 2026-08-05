@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon-Suche</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>🔎 Pokémon-Suche</h1>
+
+        <form id="form">
+            <input type="text" id="name" placeholder="pikachu, charizard, ..." value="pikachu" required>
+            <button type="submit">Suchen</button>
+            <button type="button" id="btn-zufall">🎲 Zufällig</button>
+        </form>
+
+        <div id="ergebnis" class="ergebnis">
+            <p class="platzhalter">Such ein Pokémon.</p>
+        </div>
+    </main>
+</body>
+</html>
