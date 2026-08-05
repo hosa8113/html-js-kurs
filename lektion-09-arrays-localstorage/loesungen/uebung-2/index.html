@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Persistente To-Do</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>💾 Meine Tasks</h1>
+
+        <form id="form">
+            <input type="text" id="input" placeholder="Neuer Task..." required minlength="2">
+            <button type="submit">+</button>
+        </form>
+
+        <div class="filter">
+            <button class="filter-btn aktiv" data-filter="alle">Alle</button>
+            <button class="filter-btn" data-filter="offen">Offen</button>
+            <button class="filter-btn" data-filter="erledigt">Erledigt</button>
+        </div>
+
+        <ul id="liste"></ul>
+
+        <div class="footer">
+            <span id="status">Keine Tasks.</span>
+            <button id="btn-clear" class="clear">Alle löschen</button>
+        </div>
+    </main>
+</body>
+</html>

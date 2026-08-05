@@ -1,0 +1,134 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+h1 { text-align: center; }
+
+form {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover { background-color: #2980b9; }
+
+.filter {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filter-btn {
+    background-color: white;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+.filter-btn.aktiv {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: white;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+li .text { flex: 1; }
+
+li.erledigt .text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li .loesch {
+    background-color: transparent;
+    color: #e74c3c;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.clear {
+    background-color: transparent;
+    color: #7f8c8d;
+    padding: 4px 10px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+}
+
+.clear:hover {
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.leer {
+    text-align: center;
+    color: #bdc3c7;
+    padding: 40px 20px;
+    font-style: italic;
+}
