@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 { color: #3498db; }
+h2 { text-align: left; margin-top: 32px; }
+
+.counter {
+    font-size: 96px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 24px 0;
+    transition: color 0.2s;
+}
+
+.counter.negativ { color: #e74c3c; }
+.counter.positiv { color: #27ae60; }
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 100px;
+}
+
+button:hover { background-color: #2980b9; }
+
+#btn-reset { background-color: #95a5a6; }
+#btn-reset:hover { background-color: #7f8c8d; }
+
+.verlauf {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.verlauf li {
+    background-color: white;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.verlauf .aktion { color: #7f8c8d; font-size: 13px; }
+.verlauf .wert { font-weight: bold; margin: 0 12px; }
+
+.verlauf button {
+    background-color: transparent;
+    color: #e74c3c;
+    padding: 4px 8px;
+    font-size: 13px;
+    max-width: none;
+}
+
+.verlauf button:hover { background-color: #fee; }

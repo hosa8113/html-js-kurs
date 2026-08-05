@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#counter {
+    font-size: 96px;
+    font-weight: bold;
+    margin: 24px 0;
+    color: #2c3e50;
+    transition: color 0.2s;
+}
+
+#counter.positiv { color: #27ae60; }
+#counter.negativ { color: #e74c3c; }
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 100px;
+}
+
+button:hover { background-color: #2980b9; }
+
+#btn-reset { background-color: #95a5a6; }
+#btn-reset:hover { background-color: #7f8c8d; }
