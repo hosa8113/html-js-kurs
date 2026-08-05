@@ -1,0 +1,193 @@
+* { box-sizing: border-box; }
+
+:root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #2c3e50;
+    --text-muted: #7f8c8d;
+    --border: #e0e0e0;
+    --accent: #10b981;
+    --accent-dark: #059669;
+    --danger: #ef4444;
+    --done: #d1fae5;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+header h1 {
+    margin: 0 0 4px;
+    font-size: 36px;
+}
+
+.untertitel {
+    color: var(--text-muted);
+    margin: 0;
+    font-style: italic;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add-form {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 8px;
+    background-color: var(--card);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 24px;
+}
+
+input, button {
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--card);
+    color: var(--text);
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+#emoji {
+    text-align: center;
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover { background-color: var(--accent-dark); }
+
+.datum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.datum-header h2 { margin: 0; }
+.statistik { color: var(--text-muted); font-size: 14px; margin: 0; }
+
+.habits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.habit {
+    background-color: var(--card);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    border-left: 4px solid var(--border);
+    transition: border-color 0.2s;
+}
+
+.habit.erledigt {
+    border-left-color: var(--accent);
+    background-color: var(--done);
+}
+
+.habit .emoji {
+    font-size: 32px;
+}
+
+.habit .name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+
+.habit .streak {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 2px 0 0;
+}
+
+.woche {
+    display: flex;
+    gap: 4px;
+}
+
+.tag {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: var(--border);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.tag.erledigt { background-color: var(--accent); color: white; }
+.tag.heute { border: 2px solid var(--accent-dark); }
+
+.check-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.check-btn.erledigt {
+    background-color: var(--accent-dark);
+}
+
+.loesch-btn {
+    background: transparent;
+    border: none;
+    color: var(--danger);
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.leer {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 60px 20px;
+    font-style: italic;
+    background-color: var(--card);
+    border-radius: 12px;
+    border: 2px dashed var(--border);
+}

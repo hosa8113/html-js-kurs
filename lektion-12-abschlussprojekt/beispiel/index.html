@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌱 Habit Tracker</h1>
+        <p class="untertitel">Kleine Schritte, jeden Tag.</p>
+    </header>
+
+    <main>
+        <form id="form" class="add-form">
+            <input type="text" id="emoji" maxlength="4" placeholder="🏃" required>
+            <input type="text" id="name" placeholder="Neue Gewohnheit..." required minlength="2">
+            <button type="submit">+ Hinzufügen</button>
+        </form>
+
+        <section class="datum-header">
+            <h2 id="heute-titel"></h2>
+            <p id="statistik" class="statistik"></p>
+        </section>
+
+        <ul id="habits" class="habits"></ul>
+    </main>
+</body>
+</html>
