@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Zahlenraten</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>🎯 Rate meine Zahl!</h1>
+        <p>Ich denke an eine Zahl zwischen 1 und 100.</p>
+
+        <div class="row">
+            <input type="number" id="eingabe" min="1" max="100" placeholder="1-100">
+            <button id="btn-raten">Raten</button>
+        </div>
+
+        <p id="feedback">Los geht's!</p>
+        <p>Versuche: <span id="versuche">0</span></p>
+    </main>
+</body>
+</html>

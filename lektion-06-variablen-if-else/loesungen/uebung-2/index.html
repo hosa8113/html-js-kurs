@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schere, Stein, Papier</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>✂️ 🪨 📄</h1>
+        <p>Wähle deinen Zug:</p>
+
+        <div class="wahl-buttons">
+            <button class="wahl" data-wahl="schere">✂️<br>Schere</button>
+            <button class="wahl" data-wahl="stein">🪨<br>Stein</button>
+            <button class="wahl" data-wahl="papier">📄<br>Papier</button>
+        </div>
+
+        <div id="ergebnis" class="ergebnis">
+            <p>Wähle einen Zug oben.</p>
+        </div>
+
+        <div class="statistik">
+            <div class="stat">
+                <div class="stat-label">Siege</div>
+                <div class="stat-wert" id="siege">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Niederlagen</div>
+                <div class="stat-wert" id="niederlagen">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Unentschieden</div>
+                <div class="stat-wert" id="unentschieden">0</div>
+            </div>
+        </div>
+
+        <button id="btn-reset" class="reset-btn">↩️ Statistik zurücksetzen</button>
+    </main>
+</body>
+</html>

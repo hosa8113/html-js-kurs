@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic 8-Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>🎱 Magic 8-Ball</h1>
+        <p class="untertitel">Stell eine Frage. Ich hab die Antwort.</p>
+
+        <div class="frage-feld">
+            <input type="text" id="frage" placeholder="Wird morgen die Sonne scheinen?">
+            <button id="btn-fragen">🔮 Frag die Kugel</button>
+        </div>
+
+        <div id="antwort" class="antwort">
+            <p class="platzhalter">Deine Antwort erscheint hier.</p>
+        </div>
+
+        <p class="counter">Fragen gestellt: <span id="counter">0</span></p>
+    </main>
+</body>
+</html>

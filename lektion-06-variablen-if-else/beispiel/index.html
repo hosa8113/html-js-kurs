@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Zahlenraten-Spiel</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>🎯 Zahlenraten</h1>
+        <p>Ich habe eine Zahl zwischen 1 und 100 im Kopf. Rate!</p>
+
+        <div class="spielfeld">
+            <input type="number" id="eingabe" min="1" max="100" placeholder="Deine Zahl...">
+            <button id="btn-raten">Raten</button>
+        </div>
+
+        <div id="feedback" class="feedback">Los geht's!</div>
+
+        <p class="versuche">Versuche: <span id="versuche">0</span></p>
+
+        <button id="btn-neu" class="neu-btn" hidden>🎮 Nochmal spielen</button>
+    </main>
+</body>
+</html>

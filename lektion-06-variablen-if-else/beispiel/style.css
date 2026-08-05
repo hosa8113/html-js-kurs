@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #3498db;
+}
+
+.spielfeld {
+    display: flex;
+    gap: 8px;
+    margin: 24px 0;
+}
+
+input[type="number"] {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.feedback {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-size: 18px;
+    min-height: 30px;
+    transition: background-color 0.3s;
+}
+
+.feedback.zu-tief {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.feedback.zu-hoch {
+    background-color: #fed7aa;
+    color: #9a3412;
+}
+
+.feedback.richtig {
+    background-color: #d1fae5;
+    color: #065f46;
+    font-weight: bold;
+}
+
+.feedback.fehler {
+    background-color: #fecaca;
+    color: #991b1b;
+}
+
+.versuche {
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.neu-btn {
+    background-color: #2ecc71;
+    margin-top: 20px;
+}
+
+.neu-btn:hover {
+    background-color: #27ae60;
+}
