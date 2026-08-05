@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Wie geht's dir?</h1>
+        <p class="unterzeile">Klick auf eine Stimmung.</p>
+
+        <div class="stimmungen">
+            <button class="stimmung" data-stimmung="glücklich">😀</button>
+            <button class="stimmung" data-stimmung="neutral">😐</button>
+            <button class="stimmung" data-stimmung="traurig">😢</button>
+            <button class="stimmung" data-stimmung="müde">😴</button>
+            <button class="stimmung" data-stimmung="wütend">😠</button>
+            <button class="stimmung" data-stimmung="mega">🔥</button>
+        </div>
+
+        <div id="ergebnis" class="ergebnis">
+            <p class="platzhalter">Noch keine Stimmung ausgewählt.</p>
+        </div>
+    </main>
+</body>
+</html>

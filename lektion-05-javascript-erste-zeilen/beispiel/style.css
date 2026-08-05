@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 12px;
+}
+
+.button-reihe {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.ausgabe {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-height: 60px;
+}
+
+/* Dark Mode Klasse — wird per JS getoggelt */
+body.dark {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark h1 {
+    color: #38bdf8;
+}
+
+body.dark .ausgabe {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    box-shadow: none;
+}
+
+body.dark button {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
