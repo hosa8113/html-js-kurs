@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px;
+    color: #2c3e50;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#anzeige {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.2s;
+}
+
+#anzeige.positiv { color: #27ae60; }
+#anzeige.negativ { color: #e74c3c; }
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    max-width: 100px;
+}
+
+button:hover { background: #2980b9; }
+
+#btn-reset { background: #95a5a6; }
