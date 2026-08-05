@@ -1,0 +1,152 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 { text-align: center; }
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.form-row > label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #666;
+    min-width: 140px;
+}
+
+select {
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 4px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 2;
+    min-width: 180px;
+}
+
+fieldset legend {
+    font-size: 13px;
+    color: #666;
+    padding: 0 4px;
+}
+
+fieldset label {
+    font-weight: normal;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+}
+
+button:hover { background-color: #2980b9; }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: white;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+li.prio-niedrig { border-left: 4px solid #2ecc71; }
+li.prio-mittel  { border-left: 4px solid #f39c12; }
+li.prio-hoch    { border-left: 4px solid #e74c3c; }
+
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+li .text { flex: 1; }
+
+li.erledigt .text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.badge {
+    background-color: #ecf0f1;
+    color: #555;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+li .loesch {
+    background-color: transparent;
+    color: #e74c3c;
+    padding: 4px 10px;
+    font-size: 13px;
+    width: auto;
+}
+
+li .loesch:hover { background-color: #fee; }

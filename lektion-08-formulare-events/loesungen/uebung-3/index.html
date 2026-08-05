@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrieren</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Konto erstellen</h1>
+        <p class="unter">Werde Teil unserer (fiktiven) Community.</p>
+
+        <form id="form">
+            <label>
+                Benutzername
+                <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                <small>3–20 Zeichen</small>
+            </label>
+
+            <label>
+                E-Mail
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label>
+                Alter
+                <input type="number" id="alter" name="alter" required min="16" max="120">
+                <small>Ab 16 Jahren</small>
+            </label>
+
+            <label>
+                Passwort
+                <input type="password" id="pw" name="pw" required minlength="8">
+                <small>Mindestens 8 Zeichen</small>
+            </label>
+
+            <label>
+                Passwort wiederholen
+                <input type="password" id="pw2" name="pw2" required>
+            </label>
+
+            <label>
+                Über dich (max. 200 Zeichen)
+                <textarea id="bio" name="bio" maxlength="200" rows="3"></textarea>
+                <small><span id="bio-counter">0</span>/200</small>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="agb" name="agb" required>
+                Ich akzeptiere die (nicht vorhandenen) AGB
+            </label>
+
+            <button type="submit">Registrieren</button>
+        </form>
+
+        <div id="fehler" class="alert fehler" hidden></div>
+        <div id="erfolg" class="alert erfolg" hidden></div>
+    </main>
+</body>
+</html>
