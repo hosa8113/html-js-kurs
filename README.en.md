@@ -64,7 +64,7 @@ No additional setup, no Node.js, no npm. Everything runs directly in the browser
 | # | Lesson | What You'll Build |
 |---|--------|-------------------|
 | 5 | **[JavaScript: First Steps](lektion-05-javascript-erste-zeilen/)** | Interactive mood tracker |
-| 6 | **[Variables & if/else](lektion-06-variablen-if-else/)** | Number guessing game + Magic 8-Ball |
+| 6 | **[Variables & if/else](lektion-06-variablen-if-else/)** | Number guessing game + Rock-Paper-Scissors |
 | 7 | **[DOM Manipulation](lektion-07-dom-manipulation/)** | Click counter + shopping list |
 | 8 | **[Forms & Events](lektion-08-formulare-events/)** | To-do list + registration form |
 

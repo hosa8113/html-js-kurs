@@ -31,7 +31,7 @@ function verlaufsEintrag(aktion, wert) {
     wertSpan.textContent = wert;
 
     const zeitSpan = document.createElement("span");
-    zeitSpan.className = "aktion";
+    zeitSpan.className = "zeit";
     zeitSpan.textContent = new Date().toLocaleTimeString("de-CH");
 
     const loeschBtn = document.createElement("button");

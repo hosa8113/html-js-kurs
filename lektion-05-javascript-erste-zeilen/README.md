@@ -48,7 +48,7 @@ Nach dieser Lektion kannst du:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <title>Meine Seite</title>
     <script defer src="script.js"></script>

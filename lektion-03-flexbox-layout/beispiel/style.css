@@ -78,7 +78,7 @@ main {
 }
 
 /* ==========================================
-   Footer — zwei Zeilen zentriert
+   Footer — Inhalt links/rechts verteilt
    ========================================== */
 footer {
     display: flex;

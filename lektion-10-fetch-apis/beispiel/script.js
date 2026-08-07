@@ -9,7 +9,7 @@ async function ladeWitz() {
 
     try {
         // 2. Fetch
-        const url = "https://v2.jokeapi.dev/joke/Programming?type=single&lang=de";
+        const url = "https://v2.jokeapi.dev/joke/Programming?type=single";
         const response = await fetch(url);
 
         if (!response.ok) {

@@ -62,7 +62,7 @@ Kein weiteres Setup, kein Node.js, kein npm. Alles läuft direkt im Browser.
 | # | Lektion | Am Ende hast du gebaut |
 |---|---------|------------------------|
 | 5 | **[JavaScript: Erste Zeilen](lektion-05-javascript-erste-zeilen/)** | Interaktiver Mood Tracker |
-| 6 | **[Variablen & if/else](lektion-06-variablen-if-else/)** | Zahlenraten-Spiel + Magic 8-Ball |
+| 6 | **[Variablen & if/else](lektion-06-variablen-if-else/)** | Zahlenraten-Spiel + Schere-Stein-Papier |
 | 7 | **[DOM manipulieren](lektion-07-dom-manipulation/)** | Klick-Counter + Einkaufsliste |
 | 8 | **[Formulare & Events](lektion-08-formulare-events/)** | To-Do-Liste + Registrier-Formular |
 

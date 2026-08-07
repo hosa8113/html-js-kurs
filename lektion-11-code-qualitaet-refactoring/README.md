@@ -275,7 +275,7 @@ Später mit `npm install --save-dev prettier eslint` in echten Projekten.
 
 ## Checkliste
 
-- [ ] Ich habe mindestens 3 der 5 Regeln (sprechende Namen, kleine Funktionen, DRY, keine Magic Numbers, sinnvolle Kommentare) auf mein Code angewendet
+- [ ] Ich habe mindestens 3 der 5 Regeln (sprechende Namen, kleine Funktionen, DRY, keine Magic Numbers, sinnvolle Kommentare) auf meinen Code angewendet
 - [ ] Ich habe einen "vorher"-Code mit einem "nachher"-Code verglichen
 - [ ] Ich verstehe, warum Code-Qualität nicht Bonus, sondern Grundvoraussetzung ist
 

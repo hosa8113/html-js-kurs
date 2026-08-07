@@ -13,7 +13,7 @@ Nach dieser Lektion kannst du:
 - Erklären, was eine API ist und wie sie funktioniert
 - HTTP-Basics verstehen: GET, Status-Codes, JSON
 - Mit `fetch()` Daten von einer öffentlichen API holen
-- `async` / `await` für lesbare asynchrone Kalls verwenden
+- `async` / `await` für lesbare asynchrone Aufrufe verwenden
 - Fehler mit `try/catch` abfangen
 - Loading-States und Error-States in der UI zeigen
 - Öffentliche APIs für dein eigenes Projekt nutzen
@@ -180,7 +180,7 @@ Alle ohne API-Key nutzbar:
 | **PokéAPI** | `https://pokeapi.co/api/v2/pokemon/pikachu` | Pokémon-Daten |
 | **Cat Facts** | `https://catfact.ninja/fact` | Katzen-Fakten |
 | **REST Countries** | `https://restcountries.com/v3.1/name/switzerland` | Länder-Info |
-| **Bored API** | `https://bored-api.appbrewery.com/random` | Aktivitäts-Vorschlag |
+| **Bored API** | `https://bored-api.appbrewery.com/random` | Aktivitäts-Vorschlag *(Community-Mirror, kann ausfallen)* |
 | **Open-Meteo** | `https://api.open-meteo.com/v1/forecast?latitude=47.5&longitude=8.5&current_weather=true` | Wetter (ohne Key!) |
 
 **Grosse Liste mit vielen mehr:** https://github.com/public-apis/public-apis
@@ -203,7 +203,7 @@ Wir bauen eine **Witz-App**:
 
 - Button "Neuer Witz"
 - Beim Klick: Witz von JokeAPI holen
-- Während dem Laden: "Lade..."
+- Beim Laden: "Lade..."
 - Bei Fehler: "Fehler, versuche es nochmal"
 - Bei Erfolg: Witz anzeigen
 
@@ -234,7 +234,7 @@ Für diese Lektion nutzen wir nur **Key-freie** APIs.
 
 ---
 
-## Checkliste vor dem Ende des Kurses
+## Checkliste vor der nächsten Lektion
 
 - [ ] Ich weiss, was eine API ist
 - [ ] Ich habe erfolgreich `fetch()` mit `async`/`await` benutzt

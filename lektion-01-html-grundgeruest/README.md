@@ -49,6 +49,7 @@ Jedes HTML-Dokument sieht so aus:
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titel im Browser-Tab</title>
 </head>
 <body>
@@ -62,6 +63,8 @@ Was macht was?
 - `<!DOCTYPE html>` — "Hey Browser, das ist HTML5"
 - `<html>` — der ganze Inhalt lebt hier drin
 - `<head>` — Info über die Seite (Titel, Zeichensatz). Sieht der Nutzer nicht direkt.
+- `<meta charset="UTF-8">` — stellt sicher, dass Umlaute (ä, ö, ü) richtig angezeigt werden
+- `<meta name="viewport" ...>` — macht die Seite auf Mobilgeräten korrekt dargestellt
 - `<body>` — alles, was du auf der Seite siehst
 
 ### Die wichtigsten Tags für heute

@@ -115,7 +115,7 @@ const getoggelt = tasks.map((t) =>
 );
 ```
 
-Das `{ ...t, erledigt: !t.erledigt }` ist der **Spread-Operator** — kopiert das Objekt und überschreibt ein Feld. Kommt sofort ins Muskelgedächtnis.
+Das `{ ...t, erledigt: !t.erledigt }` ist der **Spread-Operator** — kopiert das Objekt und überschreibt ein Feld. Gewöhnt man sich schnell an.
 
 ### `localStorage` — Daten im Browser speichern
 

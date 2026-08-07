@@ -2,7 +2,7 @@
 
 **Dauer:** 90 Minuten
 **Vorher:** Lektion 1 & 2 abgeschlossen
-**Am Ende:** Ein sauberes 3-Spalten-Layout mit Header, Navigation, Sidebar und Content.
+**Am Ende:** Ein sauberes Portfolio-Layout mit Header, Navigation, Karten-Reihe und Footer.
 
 ---
 
